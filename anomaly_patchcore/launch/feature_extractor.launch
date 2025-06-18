@@ -1,0 +1,9 @@
+<launch>
+    <!-- Arguments -->
+    <arg name="model" default="/home/aibx/JiaHao/catkin_ws/src/anomaly_inference/models/Wideresnet_Timms.pt"/>
+
+    <!-- Node -->
+    <node pkg="anomaly_inference" type="feature_extractor.py" name="feature_extractor_node" output="screen">
+        <param name="model" value="$(arg model)" />
+    </node>
+</launch>

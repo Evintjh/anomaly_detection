@@ -1,0 +1,14 @@
+<launch>
+
+    <!-- Arguments -->
+    <!-- <arg name="model" default="model_610_memory_bank.npy" /> -->
+    <arg name="model" default="/home/beex/catkin_ws/src/anomaly_inference/models/model_810_memory_bank.npy"/>
+
+    <!-- Node -->
+    <node pkg="anomaly_inference" type="KNN_np.py" name="KNN_np" output="screen">
+        <param name="model" value="$(arg model)" />
+    </node>
+
+    <node pkg="anomaly_inference" type="inference_KNN.py" name="inference_KNN" output="screen" />
+
+</launch>

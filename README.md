@@ -11,7 +11,7 @@ If you're seeing this, you should have downloaded the entire ML_anomaly_pipeline
   cd ML_anomaly_pipeline/anomalib  (or wherever you copied ML_anomaly_pipeline to)
   pip install -e .
   cd ..
-  run **./dependencies.sh**
+  run ./dependencies.sh
   ```
 ## Data prep
 - Cartesian sonar images would be used for detection to maintain linearity throughout frames

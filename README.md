@@ -1,8 +1,5 @@
 # Anomaly Detection
 
-## IMPORTANT
-**OPEN THIS README IN VSCODE and press CTRL+SHIFT+V**
-
 ## Installation
 If you're seeing this, you should have downloaded the entire ML_anomaly_pipeline folder from onedrive
    ```bash
@@ -105,5 +102,16 @@ roslaunch anomaly_inference inference_KNN.launch model:=<absolute path to your m
 
 ## Further development
 - there are commented out code blocks in **anomalib/src/anomalib/models/image/patchcore/torch_model.py** and **anomalib/src/anomalib/models/image/patchcore/lightning _model.py** that integrated yolo11 segmentation jit model in as a feature extractor. You may comment them out and run the training accordingly to see the results
+
+
+## Results
+
+Normal
+
+![sonar_000000_1745319952458](https://github.com/user-attachments/assets/7d01852e-0faa-40a0-acdd-576e31bfc6fc)
+
+Abnormal
+
+![sonar_184_1745399816743](https://github.com/user-attachments/assets/c599fa0f-63e8-49de-ada0-736699f0555b)
 
 
